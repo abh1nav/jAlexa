@@ -30,6 +30,9 @@ public class UrlInfo {
 
     private static final String DATEFORMAT_AWS = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'";
 
+    /**
+     * Edited by Abhinav Ajgaonkar <abhinav316@gmail.com>
+     */
     private static String ACCESS_KEY = "";
     private static String ACCESS_SEC = "";
     
@@ -38,6 +41,7 @@ public class UrlInfo {
     public UrlInfo(String site)	{
     	this.site = site;
     }
+    /** End Edits **/
 
     /**
      * Generates a timestamp for use with AWS request signing
@@ -143,6 +147,10 @@ public class UrlInfo {
     }
     
     /**
+     * Edited by Abhinav Ajgaonkar <abhinav316@gmail.com>
+     */
+    
+    /**
      * Sets up your AWS credentials for use within this class
      */
     public static void setCredentials(String key, String secret)	{
@@ -170,4 +178,6 @@ public class UrlInfo {
     	catch(Exception ex)	{ ex.printStackTrace(); }
     	return "";
     }
+    
+    /** End Edits **/
 }
